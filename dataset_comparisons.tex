@@ -1,0 +1,208 @@
+\documentclass{article}\usepackage[]{graphicx}\usepackage[]{color}
+%% maxwidth is the original width if it is less than linewidth
+%% otherwise use linewidth (to make sure the graphics do not exceed the margin)
+\makeatletter
+\def\maxwidth{ %
+  \ifdim\Gin@nat@width>\linewidth
+    \linewidth
+  \else
+    \Gin@nat@width
+  \fi
+}
+\makeatother
+
+\definecolor{fgcolor}{rgb}{0.345, 0.345, 0.345}
+\newcommand{\hlnum}[1]{\textcolor[rgb]{0.686,0.059,0.569}{#1}}%
+\newcommand{\hlstr}[1]{\textcolor[rgb]{0.192,0.494,0.8}{#1}}%
+\newcommand{\hlcom}[1]{\textcolor[rgb]{0.678,0.584,0.686}{\textit{#1}}}%
+\newcommand{\hlopt}[1]{\textcolor[rgb]{0,0,0}{#1}}%
+\newcommand{\hlstd}[1]{\textcolor[rgb]{0.345,0.345,0.345}{#1}}%
+\newcommand{\hlkwa}[1]{\textcolor[rgb]{0.161,0.373,0.58}{\textbf{#1}}}%
+\newcommand{\hlkwb}[1]{\textcolor[rgb]{0.69,0.353,0.396}{#1}}%
+\newcommand{\hlkwc}[1]{\textcolor[rgb]{0.333,0.667,0.333}{#1}}%
+\newcommand{\hlkwd}[1]{\textcolor[rgb]{0.737,0.353,0.396}{\textbf{#1}}}%
+
+\usepackage{framed}
+\makeatletter
+\newenvironment{kframe}{%
+ \def\at@end@of@kframe{}%
+ \ifinner\ifhmode%
+  \def\at@end@of@kframe{\end{minipage}}%
+  \begin{minipage}{\columnwidth}%
+ \fi\fi%
+ \def\FrameCommand##1{\hskip\@totalleftmargin \hskip-\fboxsep
+ \colorbox{shadecolor}{##1}\hskip-\fboxsep
+     % There is no \\@totalrightmargin, so:
+     \hskip-\linewidth \hskip-\@totalleftmargin \hskip\columnwidth}%
+ \MakeFramed {\advance\hsize-\width
+   \@totalleftmargin\z@ \linewidth\hsize
+   \@setminipage}}%
+ {\par\unskip\endMakeFramed%
+ \at@end@of@kframe}
+\makeatother
+
+\definecolor{shadecolor}{rgb}{.97, .97, .97}
+\definecolor{messagecolor}{rgb}{0, 0, 0}
+\definecolor{warningcolor}{rgb}{1, 0, 1}
+\definecolor{errorcolor}{rgb}{1, 0, 0}
+\newenvironment{knitrout}{}{} % an empty environment to be redefined in TeX
+
+\usepackage{alltt}
+\usepackage[margin=1in]{geometry}
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+
+\begin{document}
+
+\begin{knitrout}
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{kframe}
+\begin{alltt}
+\hlkwd{load}\hlstd{(}\hlstr{"study79.df"}\hlstd{)}
+\hlkwd{load}\hlstd{(}\hlstr{"study81.df"}\hlstd{)}
+
+\hlkwd{colSums}\hlstd{(}\hlkwd{is.na}\hlstd{(study.79))}
+\end{alltt}
+\begin{verbatim}
+##       USUBJID time.in.trial        censor days_horm_use          doce 
+##             0             0             0           166            12 
+##          ecog           hgb           psa          alkp          meas 
+##             1             2             3            15           147 
+##     treatment 
+##             0
+\end{verbatim}
+\begin{alltt}
+\hlkwd{colSums}\hlstd{(}\hlkwd{is.na}\hlstd{(study.81))}
+\end{alltt}
+\begin{verbatim}
+##       USUBJID time.in.trial        censor          doce days_horm_use 
+##             0             7             7             9           179 
+##          ecog           hgb           psa          alkp          meas 
+##            22             2             3             2            59 
+##     treatment 
+##             0
+\end{verbatim}
+\begin{alltt}
+\hlstd{combined.data} \hlkwb{<-} \hlkwd{rbind}\hlstd{(study.79, study.81)}
+\hlstd{combined.data}\hlopt{$}\hlstd{treatment} \hlkwb{<-} \hlkwd{factor}\hlstd{(combined.data}\hlopt{$}\hlstd{treatment)}
+\hlkwd{dim}\hlstd{(combined.data)}
+\end{alltt}
+\begin{verbatim}
+## [1] 603  11
+\end{verbatim}
+\begin{alltt}
+\hlkwd{head}\hlstd{(combined.data)}
+\end{alltt}
+\begin{verbatim}
+##              USUBJID time.in.trial censor days_horm_use doce ecog hgb
+## 1 006193-032-007-202            37  FALSE           309    1    1 112
+## 2 006193-032-007-302            56  FALSE           343    1    1 124
+## 3 006193-032-007-402            46  FALSE           527    1    0 126
+## 4 006193-032-007-502            61   TRUE            91    1    1 113
+## 5 006193-032-007-601           116   TRUE           187    1    0 105
+## 6 006193-032-007-801            48  FALSE          2348    1    1 114
+##     psa alkp meas treatment
+## 1  66.5   39 TRUE         1
+## 2 113.0   93   NA         1
+## 3 445.0  347 TRUE         1
+## 4 500.0   81 TRUE         1
+## 5  72.4   62 TRUE         1
+## 6 214.0  353   NA         1
+\end{verbatim}
+\begin{alltt}
+\hlkwd{boxplot}\hlstd{(time.in.trial} \hlopt{~} \hlstd{treatment,} \hlkwc{data} \hlstd{= combined.data)}
+\end{alltt}
+\end{kframe}
+
+{\centering \includegraphics[width=\maxwidth]{figure/unnamed-chunk-11} 
+
+}
+
+
+\begin{kframe}\begin{alltt}
+\hlkwd{boxplot}\hlstd{(days_horm_use} \hlopt{~} \hlstd{treatment,} \hlkwc{data} \hlstd{= combined.data)}
+\end{alltt}
+\end{kframe}
+
+{\centering \includegraphics[width=\maxwidth]{figure/unnamed-chunk-12} 
+
+}
+
+
+\begin{kframe}\begin{alltt}
+\hlkwd{boxplot}\hlstd{(hgb} \hlopt{~} \hlstd{treatment,} \hlkwc{data} \hlstd{= combined.data)}
+\end{alltt}
+\end{kframe}
+
+{\centering \includegraphics[width=\maxwidth]{figure/unnamed-chunk-13} 
+
+}
+
+
+\begin{kframe}\begin{alltt}
+\hlkwd{boxplot}\hlstd{(psa} \hlopt{~} \hlstd{treatment,} \hlkwc{data} \hlstd{= combined.data)}
+\end{alltt}
+\end{kframe}
+
+{\centering \includegraphics[width=\maxwidth]{figure/unnamed-chunk-14} 
+
+}
+
+
+\begin{kframe}\begin{alltt}
+\hlkwd{boxplot}\hlstd{(alkp} \hlopt{~} \hlstd{treatment,} \hlkwc{data} \hlstd{= combined.data)}
+\end{alltt}
+\end{kframe}
+
+{\centering \includegraphics[width=\maxwidth]{figure/unnamed-chunk-15} 
+
+}
+
+
+\begin{kframe}\begin{alltt}
+\hlkwd{mean}\hlstd{(study.79}\hlopt{$}\hlstd{doce,} \hlkwc{na.rm} \hlstd{=} \hlnum{TRUE}\hlstd{)}
+\end{alltt}
+\begin{verbatim}
+## [1] 0.717
+\end{verbatim}
+\begin{alltt}
+\hlkwd{mean}\hlstd{(study.81}\hlopt{$}\hlstd{doce,} \hlkwc{na.rm} \hlstd{=} \hlnum{TRUE}\hlstd{)}
+\end{alltt}
+\begin{verbatim}
+## [1] 0.6553
+\end{verbatim}
+\begin{alltt}
+\hlkwd{mean}\hlstd{(study.79}\hlopt{$}\hlstd{ecog,} \hlkwc{na.rm} \hlstd{=} \hlnum{TRUE}\hlstd{)}
+\end{alltt}
+\begin{verbatim}
+## [1] 0.6657
+\end{verbatim}
+\begin{alltt}
+\hlkwd{mean}\hlstd{(study.81}\hlopt{$}\hlstd{ecog,} \hlkwc{na.rm} \hlstd{=} \hlnum{TRUE}\hlstd{)}
+\end{alltt}
+\begin{verbatim}
+## [1] 0.5219
+\end{verbatim}
+\begin{alltt}
+\hlkwd{mean}\hlstd{(study.79}\hlopt{$}\hlstd{meas,} \hlkwc{na.rm} \hlstd{=} \hlnum{TRUE}\hlstd{)}
+\end{alltt}
+\begin{verbatim}
+## [1] 0.9891
+\end{verbatim}
+\begin{alltt}
+\hlkwd{mean}\hlstd{(study.81}\hlopt{$}\hlstd{meas,} \hlkwc{na.rm} \hlstd{=} \hlnum{TRUE}\hlstd{)}
+\end{alltt}
+\begin{verbatim}
+## [1] 0.7477
+\end{verbatim}
+\begin{alltt}
+\hlstd{combined.data} \hlkwb{<-} \hlkwd{subset}\hlstd{(combined.data,} \hlkwc{select} \hlstd{=} \hlopt{-}\hlkwd{c}\hlstd{(days_horm_use, meas))}
+\hlstd{temp} \hlkwb{<-} \hlstd{combined.data[}\hlkwd{rowSums}\hlstd{(}\hlkwd{is.na}\hlstd{(combined.data))} \hlopt{==} \hlnum{0}\hlstd{, ]}
+\hlstd{fit} \hlkwb{<-} \hlkwd{glm}\hlstd{(treatment} \hlopt{~} \hlstd{doce} \hlopt{+} \hlstd{ecog} \hlopt{+} \hlstd{hgb} \hlopt{+} \hlstd{psa} \hlopt{+} \hlstd{alkp,} \hlkwc{data} \hlstd{= temp,} \hlkwc{family} \hlstd{=} \hlstr{"binomial"}\hlstd{)}
+\end{alltt}
+
+
+{\ttfamily\noindent\color{warningcolor}{\#\# Warning: glm.fit: algorithm did not converge\\\#\# Warning: glm.fit: fitted probabilities numerically 0 or 1 occurred}}\end{kframe}
+\end{knitrout}
+
+
+
+\end{document}

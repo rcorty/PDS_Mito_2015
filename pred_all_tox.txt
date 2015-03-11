@@ -1,0 +1,372 @@
+"PREFTEXT" "N"
+"Nausea" 53
+"Fatigue" 52
+"Constipation" 45
+"Back pain" 44
+"Anaemia" 41
+"Decreased appetite" 40
+"Diarrhoea" 35
+"Vomiting" 34
+"Bone pain" 32
+"Pain in extremity" 31
+"Asthenia" 30
+"Arthralgia" 22
+"Dysgeusia" 21
+"Pain" 20
+"Insomnia" 19
+"CONDITION AGGRAVATED (DUE TO DISEASE PROGRESSION)" 19
+"Weight decreased" 18
+"Oedema peripheral" 18
+"Disease progression" 16
+"Blood alkaline phosphatase increased" 15
+"Headache" 14
+"Dry skin" 14
+"Haematuria" 13
+"Muscle spasms" 13
+"Musculoskeletal chest pain" 12
+"Dyspnoea" 12
+"Hypertension" 12
+"Dizziness" 12
+"Urinary tract infection" 11
+"Rash" 11
+"Muscular weakness" 10
+"Musculoskeletal pain" 10
+"Hypocalcaemia" 10
+"Hyperglycaemia" 10
+"Cough" 10
+"Dry mouth" 10
+"Dyspepsia" 9
+"Mucosal inflammation" 9
+"Chest pain" 9
+"Hyponatraemia" 8
+"Pneumonia" 8
+"Stomatitis" 8
+"Myalgia" 8
+"Abdominal pain" 7
+"Paraesthesia" 7
+"Contusion" 7
+"Urinary retention" 7
+"Peripheral sensory neuropathy" 7
+"Pyrexia" 7
+"Fall" 7
+"Abdominal pain upper" 6
+"Blood creatinine increased" 6
+"Hypokalaemia" 6
+"Pruritus" 6
+"Neck pain" 6
+"Hypotension" 6
+"Depression" 6
+"Nasopharyngitis" 6
+"General physical health deterioration" 6
+"Palmar-plantar erythrodysaesthesia syndrome" 6
+"Aspartate aminotransferase increased" 6
+"Night sweats" 6
+"Abdominal distension" 6
+"Haemoglobin decreased" 6
+"Pelvic pain" 5
+"Erythema" 5
+"Pollakiuria" 5
+"Rectal haemorrhage" 5
+"Hot flush" 5
+"Hyperhidrosis" 5
+"Blood urea increased" 5
+"Confusional state" 5
+"Anxiety" 5
+"Tumour pain" 5
+"Yellow skin" 4
+"Hypoaesthesia" 4
+"Upper respiratory tract infection" 4
+"Groin pain" 4
+"Hyperkalaemia" 4
+"Thrombocytopenia" 4
+"Dysuria" 4
+"Nocturia" 4
+"Infection" 4
+"Pulmonary embolism" 4
+"Blood lactate dehydrogenase increased" 4
+"Urinary incontinence" 4
+"Dehydration" 4
+"Lethargy" 4
+"Flatulence" 4
+"Hypoalbuminaemia" 4
+"Peripheral motor neuropathy" 4
+"Nail disorder" 3
+"Electrocardiogram QT prolonged" 3
+"Herpes zoster" 3
+"Lacrimation increased" 3
+"Oedema" 3
+"Petechiae" 3
+"Alopecia" 3
+"Cellulitis" 3
+"Ecchymosis" 3
+"Dyspnoea exertional" 3
+"Malaise" 3
+"Hypomagnesaemia" 3
+"Conjunctivitis" 3
+"Skin discolouration" 3
+"Haemorrhoids" 3
+"Bronchitis" 3
+"Hair colour changes" 3
+"Musculoskeletal stiffness" 3
+"Spinal cord compression" 3
+"Ataxia" 2
+"Fibula fracture" 2
+"Gastrointestinal haemorrhage" 2
+"Diplopia" 2
+"Lymphoedema" 2
+"Hypoaesthesia oral" 2
+"Hypophosphataemia" 2
+"Phlebitis" 2
+"Dysaesthesia" 2
+"Toothache" 2
+"Tremor" 2
+"Metastatic pain" 2
+"Renal failure" 2
+"Thrombosis" 2
+"Urinary tract disorder" 2
+"Activated partial thromboplastin time prolonged" 2
+"Bladder spasm" 2
+"Peripheral coldness" 2
+"Oral candidiasis" 2
+"Epigastric discomfort" 2
+"Hepatic failure" 2
+"Myopathy" 2
+"Influenza" 2
+"Productive cough" 2
+"Wheezing" 2
+"Depressed mood" 2
+"Hypoacusis" 2
+"Renal failure acute" 2
+"Joint swelling" 2
+"Lower respiratory tract infection" 2
+"Palpitations" 2
+"Flushing" 2
+"Visual impairment" 2
+"Epistaxis" 2
+"Neuralgia" 2
+"Lymphopenia" 2
+"Laceration" 2
+"Convulsion" 2
+"Alanine aminotransferase increased" 2
+"Gamma-glutamyltransferase increased" 2
+"Neoplasm" 2
+"Somnolence" 2
+"Intraocular pressure increased" 1
+"Left ventricular dysfunction" 1
+"Micturition urgency" 1
+"Food poisoning" 1
+"Neutrophil count decreased" 1
+"Pancytopenia" 1
+"Swelling" 1
+"Inappropriate antidiuretic hormone secretion" 1
+"Polymyalgia rheumatica" 1
+"Oropharyngeal pain" 1
+"Cushingoid" 1
+"Facial pain" 1
+"Myocardial infarction" 1
+"Onychoclasis" 1
+"Tongue dry" 1
+"Mouth ulceration" 1
+"Purpura" 1
+"Device occlusion" 1
+"Tinea pedis" 1
+"Obstructive uropathy" 1
+"Hyperaesthesia" 1
+"Acidosis" 1
+"Adrenal insufficiency" 1
+"Albuminuria" 1
+"Azotaemia" 1
+"Delirium" 1
+"Herpes virus infection" 1
+"Stress cardiomyopathy" 1
+"Bone neoplasm" 1
+"Gingival bleeding" 1
+"Sudden death" 1
+"Ageusia" 1
+"Angiopathy" 1
+"Platelet count decreased" 1
+"Transaminases increased" 1
+"Foot fracture" 1
+"Osteitis" 1
+"Pleural effusion" 1
+"Paronychia" 1
+"Oral fungal infection" 1
+"Penile oedema" 1
+"Ocular hypertension" 1
+"Hypercreatininaemia" 1
+"Urinary tract obstruction" 1
+"Hepatic pain" 1
+"Tendonitis" 1
+"Dystonia" 1
+"Migraine with aura" 1
+"Palatal disorder" 1
+"Cystitis" 1
+"Food aversion" 1
+"Diabetes mellitus" 1
+"Gait disturbance" 1
+"Ear pain" 1
+"Blood fibrinogen abnormal" 1
+"Disseminated intravascular coagulation" 1
+"Retching" 1
+"Face oedema" 1
+"Increased tendency to bruise" 1
+"Paranasal sinus hypersecretion" 1
+"Polyuria" 1
+"Proteinuria" 1
+"Macule" 1
+"Acarodermatitis" 1
+"Hypertonic bladder" 1
+"Gastrooesophageal reflux disease" 1
+"Sciatica" 1
+"Influenza like illness" 1
+"Oral pain" 1
+"Atrial fibrillation" 1
+"Parosmia" 1
+"Dizziness postural" 1
+"Subdural haemorrhage" 1
+"Onycholysis" 1
+"Tinnitus" 1
+"Skin disorder" 1
+"Hydronephrosis" 1
+"Penile pain" 1
+"Perineal pain" 1
+"Feeling hot" 1
+"Muscle strain" 1
+"Blood thyroid stimulating hormone increased" 1
+"Neoplasm skin" 1
+"Somatoform disorder" 1
+"Abdominal pain lower" 1
+"Aerophagia" 1
+"Death" 1
+"Respiratory tract infection" 1
+"Tongue disorder" 1
+"Urinary tract infection bacterial" 1
+"Osteomyelitis" 1
+"Tooth infection" 1
+"Duodenogastric reflux" 1
+"Pain in jaw" 1
+"Prostatic specific antigen increased" 1
+"Blood glucose increased" 1
+"Cholestasis" 1
+"Weight increased" 1
+"VIIth nerve paralysis" 1
+"Hypotonia" 1
+"Intestinal haemorrhage" 1
+"Joint stiffness" 1
+"Joint hyperextension" 1
+"Vertigo" 1
+"Convulsions local" 1
+"Dysarthria" 1
+"Dysphagia" 1
+"Haemoptysis" 1
+"Blood thyroid stimulating hormone decreased" 1
+"Tongue coated" 1
+"Cardiovascular disorder" 1
+"Tumour haemorrhage" 1
+"Bone lesion" 1
+"Ear congestion" 1
+"Failure to thrive" 1
+"Hyperuricaemia" 1
+"Staphylococcal bacteraemia" 1
+"Chronic obstructive pulmonary disease" 1
+"Haematoma" 1
+"Tachycardia" 1
+"Eye infection" 1
+"Facial paresis" 1
+"Partial seizures" 1
+"Hemiparesis" 1
+"Neuropathy peripheral" 1
+"Polyneuropathy in malignant disease" 1
+"Bladder cancer" 1
+"Seasonal allergy" 1
+"Skin atrophy" 1
+"Oedema genital" 1
+"Pallor" 1
+"Malignant pleural effusion" 1
+"Dysphonia" 1
+"Hyperchlorhydria" 1
+"Abnormal dreams" 1
+"Osteoarthritis" 1
+"Ill-defined disorder" 1
+"Burning sensation" 1
+"Skin burning sensation" 1
+"IIIrd nerve paresis" 1
+"Disorientation" 1
+"Orthostatic hypotension" 1
+"Balance disorder" 1
+"Osteoporosis" 1
+"Benign prostatic hyperplasia" 1
+"Haemorrhage subcutaneous" 1
+"Lower urinary tract symptoms" 1
+"Wound" 1
+"C-reactive protein increased" 1
+"Aortic thrombosis" 1
+"Deep vein thrombosis" 1
+"Haemoglobin increased" 1
+"Pain of skin" 1
+"Liver palpable subcostal" 1
+"Liver function test abnormal" 1
+"Tearfulness" 1
+"Mobility decreased" 1
+"Hypermagnesaemia" 1
+"International normalised ratio increased" 1
+"Febrile infection" 1
+"Localised infection" 1
+"Cholelithiasis" 1
+"Rib fracture" 1
+"Upper gastrointestinal haemorrhage" 1
+"Gastritis erosive" 1
+"Genital hypoaesthesia" 1
+"Blood creatinine" 1
+"Respiratory disorder" 1
+"Hand fracture" 1
+"Anxiety disorder" 1
+"Blood phosphorus decreased" 1
+"Compression fracture" 1
+"Electrocardiogram poor R-wave progression" 1
+"Gastric ulcer" 1
+"Hypovolaemia" 1
+"Bundle branch block right" 1
+"Diabetic ketoacidosis" 1
+"Hydrocephalus" 1
+"Leukocytosis" 1
+"Ascites" 1
+"Incontinence" 1
+"Eye swelling" 1
+"Blood pressure increased" 1
+"Blood urine" 1
+"Limb discomfort" 1
+"Protein urine" 1
+"Urethral haemorrhage" 1
+"White blood cells urine" 1
+"Onychomycosis" 1
+"Cardio-respiratory arrest" 1
+"Hepatic enzyme increased" 1
+"Chromaturia" 1
+"Colonic obstruction" 1
+"Restless legs syndrome" 1
+"Addison's disease" 1
+"Hyperbilirubinaemia" 1
+"Sinus congestion" 1
+"Sinus operation" 1
+"Restlessness" 1
+"Sinusitis" 1
+"Subdural haematoma" 1
+"Syncope" 1
+"Hepatorenal failure" 1
+"Jaundice" 1
+"Memory impairment" 1
+"Excoriation" 1
+"Flank pain" 1
+"Ejection fraction decreased" 1
+"Skin toxicity" 1
+"Vitamin D deficiency" 1
+"Crying" 1
+"Prostate cancer metastatic" 1
+"Candidiasis" 1
+"Irritability" 1
+"Hallucination" 1
+"Haematochezia" 1
+"Leukopenia" 1
+"Myoclonus" 1
+"Hepatomegaly" 1

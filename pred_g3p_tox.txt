@@ -1,0 +1,107 @@
+"PREFTEXT" "N"
+"Disease progression" 16
+"Anaemia" 7
+"Pain" 6
+"Blood alkaline phosphatase increased" 6
+"Asthenia" 6
+"Bone pain" 6
+"Hyponatraemia" 5
+"Urinary tract infection" 5
+"Decreased appetite" 4
+"Confusional state" 4
+"Fatigue" 3
+"General physical health deterioration" 3
+"Back pain" 3
+"Hypokalaemia" 2
+"Hyperkalaemia" 2
+"Urinary retention" 2
+"Hypocalcaemia" 2
+"Hypotension" 2
+"Pneumonia" 2
+"Vomiting" 2
+"Pulmonary embolism" 2
+"Insomnia" 2
+"Spinal cord compression" 2
+"Lethargy" 2
+"Arthralgia" 2
+"Chest pain" 2
+"Dyspepsia" 2
+"Renal failure acute" 2
+"Tumour pain" 2
+"Infection" 2
+"Peripheral motor neuropathy" 2
+"Blood creatinine increased" 2
+"Hypertension" 2
+"Pain in extremity" 2
+"Left ventricular dysfunction" 1
+"Neutrophil count decreased" 1
+"Inappropriate antidiuretic hormone secretion" 1
+"Polymyalgia rheumatica" 1
+"Myocardial infarction" 1
+"Obstructive uropathy" 1
+"Acidosis" 1
+"Herpes virus infection" 1
+"Sudden death" 1
+"Weight decreased" 1
+"Oedema peripheral" 1
+"Osteitis" 1
+"Phlebitis" 1
+"Paronychia" 1
+"Thrombosis" 1
+"Urinary tract obstruction" 1
+"Bronchitis" 1
+"Aspartate aminotransferase increased" 1
+"Blood fibrinogen abnormal" 1
+"Disseminated intravascular coagulation" 1
+"Increased tendency to bruise" 1
+"Petechiae" 1
+"Subdural haemorrhage" 1
+"Constipation" 1
+"Hepatic failure" 1
+"Nocturia" 1
+"Death" 1
+"Urinary tract infection bacterial" 1
+"Duodenogastric reflux" 1
+"Herpes zoster" 1
+"Cholestasis" 1
+"Dysarthria" 1
+"Haemoptysis" 1
+"Failure to thrive" 1
+"Hyperuricaemia" 1
+"Staphylococcal bacteraemia" 1
+"Chronic obstructive pulmonary disease" 1
+"Facial paresis" 1
+"Partial seizures" 1
+"Hemiparesis" 1
+"Polyneuropathy in malignant disease" 1
+"Bladder cancer" 1
+"Malignant pleural effusion" 1
+"Hyperglycaemia" 1
+"Dizziness" 1
+"Blood lactate dehydrogenase increased" 1
+"Renal failure" 1
+"C-reactive protein increased" 1
+"Pyrexia" 1
+"Deep vein thrombosis" 1
+"Diarrhoea" 1
+"Peripheral sensory neuropathy" 1
+"Musculoskeletal pain" 1
+"Febrile infection" 1
+"Nausea" 1
+"Cholelithiasis" 1
+"Upper gastrointestinal haemorrhage" 1
+"Hypophosphataemia" 1
+"Compression fracture" 1
+"Diabetic ketoacidosis" 1
+"Hydrocephalus" 1
+"Cardio-respiratory arrest" 1
+"Hepatic enzyme increased" 1
+"Colonic obstruction" 1
+"Neoplasm" 1
+"Electrocardiogram QT prolonged" 1
+"Addison's disease" 1
+"Subdural haematoma" 1
+"Hepatorenal failure" 1
+"Jaundice" 1
+"Prostate cancer metastatic" 1
+"Gamma-glutamyltransferase increased" 1

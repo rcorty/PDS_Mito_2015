@@ -1,0 +1,39 @@
+\documentclass{article}
+\usepackage[margin=1in]{geometry}
+
+\begin{document}
+
+<<fig.height=4, fig.width=5, fig.align='center'>>=
+load('study79.df')
+load('study81.df')
+
+colSums(is.na(study.79))
+colSums(is.na(study.81))
+
+combined.data <- rbind(study.79, study.81)
+combined.data$treatment <- factor(combined.data$treatment)
+dim(combined.data)
+head(combined.data)
+
+boxplot(time.in.trial~treatment, data=combined.data)
+boxplot(days_horm_use~treatment, data=combined.data)
+boxplot(hgb~treatment, data=combined.data)
+boxplot(psa~treatment, data=combined.data)
+boxplot(alkp~treatment, data=combined.data)
+
+mean(study.79$doce, na.rm=TRUE)
+mean(study.81$doce, na.rm=TRUE)
+
+mean(study.79$ecog, na.rm=TRUE)
+mean(study.81$ecog, na.rm=TRUE)
+
+mean(study.79$meas, na.rm=TRUE)
+mean(study.81$meas, na.rm=TRUE)
+
+combined.data <- subset(combined.data, select=-c(days_horm_use, meas))
+temp <- combined.data[rowSums(is.na(combined.data)) == 0,]
+fit <- glm(treatment ~  doce + ecog + hgb + psa + alkp , data=temp, family='binomial')
+@
+
+
+\end{document}

@@ -1,0 +1,14 @@
+"PREFTEXT" "N"
+"1" "Disease progression" 20
+"2" "General physical health deterioration" 2
+"3" "Pneumonia" 1
+"4" "Sudden death" 1
+"5" "Subdural haemorrhage" 1
+"6" "Meningitis bacterial" 1
+"7" "Death" 1
+"8" "Haemoptysis" 1
+"9" "Malignant pleural effusion" 1
+"10" "Cardio-respiratory arrest" 1
+"11" "Colonic obstruction" 1
+"12" "Hepatorenal failure" 1
+"13" "Prostate cancer metastatic" 1

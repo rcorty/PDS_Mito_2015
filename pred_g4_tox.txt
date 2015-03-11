@@ -1,0 +1,34 @@
+"PREFTEXT" "N"
+"1" "Bone pain" 4
+"2" "Pulmonary embolism" 3
+"3" "Pain" 3
+"4" "Anaemia" 3
+"5" "Hyponatraemia" 2
+"6" "Inappropriate antidiuretic hormone secretion" 2
+"7" "Pneumonia" 2
+"8" "Asthenia" 2
+"9" "Urinary tract infection" 2
+"10" "Febrile infection" 2
+"11" "Hypotension" 1
+"12" "Disease progression" 1
+"13" "Osteitis" 1
+"14" "Gait disturbance" 1
+"15" "Blood fibrinogen abnormal" 1
+"16" "Spinal column stenosis" 1
+"17" "Urosepsis" 1
+"18" "Hepatic failure" 1
+"19" "Nocturia" 1
+"20" "CONDITION AGGRAVATED (DUE TO DISEASE PROGRESSION)" 1
+"21" "Meningitis bacterial" 1
+"22" "Neutropenia" 1
+"23" "Dyspnoea" 1
+"24" "Vision blurred" 1
+"25" "Metastases to nervous system" 1
+"26" "Hyperuricaemia" 1
+"27" "Chest pain" 1
+"28" "Blood lactate dehydrogenase increased" 1
+"29" "Peripheral motor neuropathy" 1
+"30" "Pain in extremity" 1
+"31" "Blood alkaline phosphatase increased" 1
+"32" "Aspartate aminotransferase increased" 1
+"33" "Back pain" 1

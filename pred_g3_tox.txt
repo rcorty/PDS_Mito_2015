@@ -1,0 +1,116 @@
+"PREFTEXT" "N"
+"1" "Anaemia" 27
+"2" "Asthenia" 15
+"3" "Fatigue" 11
+"4" "Bone pain" 11
+"5" "Blood alkaline phosphatase increased" 10
+"6" "Pain" 8
+"7" "Urinary tract infection" 8
+"8" "Decreased appetite" 7
+"9" "Confusional state" 6
+"10" "Back pain" 6
+"11" "Hyponatraemia" 5
+"12" "Nausea" 5
+"13" "Hypocalcaemia" 4
+"14" "Haematuria" 4
+"15" "Arthralgia" 4
+"16" "Hyperglycaemia" 4
+"17" "Hypokalaemia" 3
+"18" "Thrombocytopenia" 3
+"19" "Vomiting" 3
+"20" "Aspartate aminotransferase increased" 3
+"21" "Constipation" 3
+"22" "Spinal cord compression" 3
+"23" "Renal failure" 3
+"24" "Tumour pain" 3
+"25" "Diarrhoea" 3
+"26" "Infection" 3
+"27" "Inappropriate antidiuretic hormone secretion" 2
+"28" "Hyperkalaemia" 2
+"29" "Urinary retention" 2
+"30" "Oedema peripheral" 2
+"31" "Disease progression" 2
+"32" "Urinary tract obstruction" 2
+"33" "Insomnia" 2
+"34" "Blood fibrinogen abnormal" 2
+"35" "Pneumonia" 2
+"36" "Lethargy" 2
+"37" "Chest pain" 2
+"38" "Dyspepsia" 2
+"39" "Herpes zoster" 2
+"40" "Hydronephrosis" 2
+"41" "Renal failure acute" 2
+"42" "Chronic obstructive pulmonary disease" 2
+"43" "Pain in extremity" 2
+"44" "Dehydration" 2
+"45" "Blood creatinine increased" 2
+"46" "Hypertension" 2
+"47" "Post herpetic neuralgia" 2
+"48" "Pyrexia" 2
+"49" "Muscular weakness" 2
+"50" "Hypophosphataemia" 2
+"51" "Alanine aminotransferase increased" 2
+"52" "Cataract" 2
+"53" "Left ventricular dysfunction" 1
+"54" "Neutrophil count decreased" 1
+"55" "Polymyalgia rheumatica" 1
+"56" "Myocardial infarction" 1
+"57" "Device occlusion" 1
+"58" "Obstructive uropathy" 1
+"59" "Pleural effusion" 1
+"60" "Acidosis" 1
+"61" "Herpes virus infection" 1
+"62" "Weight decreased" 1
+"63" "Paraplegia" 1
+"64" "Platelet count decreased" 1
+"65" "Phlebitis" 1
+"66" "Paronychia" 1
+"67" "General physical health deterioration" 1
+"68" "Thrombosis" 1
+"69" "Hypercreatininaemia" 1
+"70" "Bronchitis" 1
+"71" "Disseminated intravascular coagulation" 1
+"72" "Increased tendency to bruise" 1
+"73" "Petechiae" 1
+"74" "Lower respiratory tract infection" 1
+"75" "Urinary tract infection bacterial" 1
+"76" "Respiratory tract infection" 1
+"77" "Duodenogastric reflux" 1
+"78" "Burning sensation" 1
+"79" "Cholestasis" 1
+"80" "Ascites" 1
+"81" "Dysarthria" 1
+"82" "Failure to thrive" 1
+"83" "Staphylococcal bacteraemia" 1
+"84" "Facial paresis" 1
+"85" "Partial seizures" 1
+"86" "Hemiparesis" 1
+"87" "Polyneuropathy in malignant disease" 1
+"88" "Bladder cancer" 1
+"89" "Abdominal pain upper" 1
+"90" "Adrenal insufficiency" 1
+"91" "Abdominal pain" 1
+"92" "Dizziness" 1
+"93" "Peripheral motor neuropathy" 1
+"94" "Alanine aminotransferase" 1
+"95" "Blood alkaline phosphatase" 1
+"96" "C-reactive protein increased" 1
+"97" "Deep vein thrombosis" 1
+"98" "Peripheral sensory neuropathy" 1
+"99" "Musculoskeletal pain" 1
+"100" "Haemoglobin decreased" 1
+"101" "Cholelithiasis" 1
+"102" "Upper gastrointestinal haemorrhage" 1
+"103" "Compression fracture" 1
+"104" "Diabetic ketoacidosis" 1
+"105" "Hydrocephalus" 1
+"106" "Hepatic enzyme increased" 1
+"107" "Neoplasm" 1
+"108" "Electrocardiogram QT prolonged" 1
+"109" "Addison's disease" 1
+"110" "Dyspnoea exertional" 1
+"111" "Hypoalbuminaemia" 1
+"112" "Hypotension" 1
+"113" "Subdural haematoma" 1
+"114" "Jaundice" 1
+"115" "Gamma-glutamyltransferase increased" 1

@@ -1,0 +1,130 @@
+---
+title: "Table1"
+author: "Robert Corty"
+date: "October 16, 2014"
+output: word_document
+---
+
+
+```{r}
+library(knitr)
+library(data.table)
+data.before.psm <- readRDS('mito_data_before_PSM')
+data.after.psm <- readRDS('caliper_matched_data')
+```
+
+
+```{r}
+
+table1.stats <- c('N', 'mean age', 'age range',
+                  '%white', '%black', '%asian', '%other',
+                  'median BMI', 'BMI range',
+                  'median ALKP', 'ALKP range',
+                  'median PSA', 'PSA range',
+                  'num ECOG = 0', '% ECOG = 0', 'num ECOG = 1', '% ECOG = 1',
+                  'median hgb', 'hgb range',
+                  'num recent doce', '% recent doce',
+                  'num w bone met', '% w bone met',
+                  'num w visc met', '% w visc met',
+                  'num w bone and vis met', '% w bone and visc met',
+                  'num w bone or visc met', '% w bone or visc met')
+
+
+getSingleCohortStats <- function(data) {
+   
+   return(c(nrow(data),
+            round(mean(data$age), 1),
+            paste0('(', paste(range(data$age), collapse = ', '), ')'),
+            round(100 * mean(data$race == 'WHITE')),
+            round(100 * mean(data$race == 'BLACK')),
+            round(100 * mean(data$race == 'ASIAN')),
+            round(100 * mean(data$race == 'OTHER')),
+            round(median(data$bmi)),
+            paste0('(', paste(round(range(data$bmi), 1), collapse = ', '), ')'),
+            round(median(data$alkp)),
+            paste0('(', paste(round(range(data$alkp), 1), collapse = ', '), ')'),
+            round(median(data$psa)),
+            paste0('(', paste(round(range(data$psa), 1), collapse = ', '), ')'),
+            sum(data$ecog == 0),
+            round(100 * mean(data$ecog == 0)),
+            sum(data$ecog == 1),
+            round(100 * mean(data$ecog == 1)),
+            round(median(data$hgb)),
+            paste0('(', paste(round(range(data$hgb), 1), collapse = ', '), ')'),
+            sum(data$recent.doce == 1),
+            round(100 * mean(data$recent.doce == 1)),
+            sum(data$bone == 1),
+            round(100 * mean(data$bone == 1)),
+            sum(data$visc == 1),
+            round(100 * mean(data$visc == 1)),
+            sum(data$bone == 1 & data$visc == 1),
+            round(100 * mean(data$bone == 1 & data$visc == 1)),
+            sum(data$bone == 1 | data$visc == 1),
+            round(100 * mean(data$bone == 1 | data$visc == 1))))
+}
+
+getPValues <- function(data1, data2) {
+   
+   return(c(NA,
+            t.test(data1$age, data2$age)$p.value,
+            NA,
+            prop.test(x = c(sum(data1$race == 'WHITE'), sum(data2$race == 'WHITE')),
+                      n = c(nrow(data1), nrow(data2)))$p.value,
+            prop.test(x = c(sum(data1$race == 'BLACK'), sum(data2$race == 'BLACK')),
+                      n = c(nrow(data1), nrow(data2)))$p.value,
+            prop.test(x = c(sum(data1$race == 'ASIAN'), sum(data2$race == 'ASIAN')),
+                      n = c(nrow(data1), nrow(data2)))$p.value,
+            prop.test(x = c(sum(data1$race == 'OTHER'), sum(data2$race == 'OTHER')),
+                      n = c(nrow(data1), nrow(data2)))$p.value,
+            t.test(data1$bmi, data2$bmi)$p.value,
+            NA,
+            t.test(data1$alkp, data2$alkp)$p.value,
+            NA,
+            t.test(data1$psa, data2$psa)$p.value,
+            NA,
+            prop.test(x = c(sum(data1$ecog == 1), sum(data2$ecog == 1)),
+                      n = c(nrow(data1), nrow(data2)))$p.value,
+            NA, NA, NA,
+            t.test(data1$hgb, data2$hgb)$p.value,
+            NA,
+            prop.test(x = c(sum(data1$recent.doce == 1), sum(data2$recent.doce == 1)),
+                      n = c(nrow(data1), nrow(data2)))$p.value,
+            NA,
+            prop.test(x = c(sum(data1$bone == 1), sum(data2$bone == 1)),
+                      n = c(nrow(data1), nrow(data2)))$p.value,
+            NA,
+            prop.test(x = c(sum(data1$visc == 1), sum(data2$visc == 1)),
+                      n = c(nrow(data1), nrow(data2)))$p.value,
+            NA,
+            prop.test(x = c(sum(data1$bone == 1 & data1$visc == 1), 
+                            sum(data2$bone == 1 & data2$visc == 1)),
+                      n = c(nrow(data1), nrow(data2)))$p.value,
+            NA,
+            prop.test(x = c(sum(data1$bone == 1 | data1$visc == 1), 
+                            sum(data2$bone == 1 | data2$visc == 1)),
+                      n = c(nrow(data1), nrow(data2)))$p.value,
+            NA))
+   
+}
+
+pred.before.psm <- getSingleCohortStats(data.before.psm[treatment == 0,])
+mito.before.psm <- getSingleCohortStats(data.before.psm[treatment == 1,])
+pred.after.psm <- getSingleCohortStats(data.after.psm[treatment == 0,])
+mito.after.psm <- getSingleCohortStats(data.after.psm[treatment == 1,])
+
+before.p <- getPValues(data.before.psm[treatment == 0,], 
+                       data.before.psm[treatment == 1,])
+after.p <- getPValues(data.after.psm[treatment == 0,], 
+                       data.after.psm[treatment == 1,])
+```
+
+```{r, results = 'asis'}
+kable(data.frame(pred.before.psm, 
+                 mito.before.psm,
+                 before.p,
+                 pred.after.psm, 
+                 mito.after.psm,
+                 after.p,
+                 row.names = table1.stats),
+      row.names = TRUE)
+```
